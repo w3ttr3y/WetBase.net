@@ -12,14 +12,19 @@ namespace FAQ.Controllers
 { 
     public class FAQController : Controller
     {
-        private FAQContext db = new FAQContext();
+        private FAQContext _context;
+
+        public FAQController(FAQContext context)
+        {
+            this._context = context;
+        }
 
         //
         // GET: /FAQ/
 
         public ViewResult Index()
         {
-            return View(db.FAQs.ToList());
+            return View(_context.FAQs.ToList());
         }
 
         //
@@ -27,7 +32,7 @@ namespace FAQ.Controllers
 
         public ViewResult Details(int id)
         {
-            FAQEntry faqentry = db.FAQs.Find(id);
+            FAQEntry faqentry = _context.FAQs.Find(id);
             return View(faqentry);
         }
 
@@ -47,8 +52,8 @@ namespace FAQ.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.FAQs.Add(faqentry);
-                db.SaveChanges();
+                _context.FAQs.Add(faqentry);
+                _context.SaveChanges();
                 return RedirectToAction("Index");  
             }
 
@@ -60,7 +65,7 @@ namespace FAQ.Controllers
  
         public ActionResult Edit(int id)
         {
-            FAQEntry faqentry = db.FAQs.Find(id);
+            FAQEntry faqentry = _context.FAQs.Find(id);
             return View(faqentry);
         }
 
@@ -72,8 +77,8 @@ namespace FAQ.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(faqentry).State = EntityState.Modified;
-                db.SaveChanges();
+                _context.Entry(faqentry).State = EntityState.Modified;
+                _context.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(faqentry);
@@ -84,7 +89,7 @@ namespace FAQ.Controllers
  
         public ActionResult Delete(int id)
         {
-            FAQEntry faqentry = db.FAQs.Find(id);
+            FAQEntry faqentry = _context.FAQs.Find(id);
             return View(faqentry);
         }
 
@@ -94,15 +99,15 @@ namespace FAQ.Controllers
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {            
-            FAQEntry faqentry = db.FAQs.Find(id);
-            db.FAQs.Remove(faqentry);
-            db.SaveChanges();
+            FAQEntry faqentry = _context.FAQs.Find(id);
+            _context.FAQs.Remove(faqentry);
+            _context.SaveChanges();
             return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)
         {
-            db.Dispose();
+            _context.Dispose();
             base.Dispose(disposing);
         }
     }

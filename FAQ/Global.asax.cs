@@ -4,6 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+//using Core;
+//using Core.Interfaces;
+//using DependencyResolution;
+using StructureMap;
+using IDependencyResolver = System.Web.Mvc.IDependencyResolver;
 
 namespace FAQ
 {
