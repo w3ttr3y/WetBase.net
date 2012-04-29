@@ -1,0 +1,5 @@
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetEntityRepository\bin\Debug\WetEntityRepository.dll
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetEntityRepository\bin\Debug\WetEntityRepository.pdb
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetEntityRepository\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetEntityRepository\obj\Debug\WetEntityRepository.dll
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetEntityRepository\obj\Debug\WetEntityRepository.pdb

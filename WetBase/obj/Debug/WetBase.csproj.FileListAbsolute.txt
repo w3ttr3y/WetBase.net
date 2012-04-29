@@ -1,0 +1,8 @@
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetBase\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetBase\bin\Debug\WetBase.XML
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetBase\bin\Debug\WetBase.dll
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetBase\bin\Debug\WetBase.pdb
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetBase\bin\Debug\WetBase.dll.CodeAnalysisLog.xml
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetBase\bin\Debug\WetBase.dll.lastcodeanalysissucceeded
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetBase\obj\Debug\WetBase.dll
+C:\Users\W3t Tr3y\Documents\WetBase\WetBase\WetBase\obj\Debug\WetBase.pdb

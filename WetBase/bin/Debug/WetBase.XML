@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WetBase</name>
+    </assembly>
+    <members>
+        <member name="T:WetBase.DAL.IGetAll`1">
+            <summary>
+            An interface for retreiving all objects, subject to filtering via the provided function.
+            </summary>
+            <typeparam name="T">The type of object to retrieve.</typeparam>
+        </member>
+        <member name="M:WetBase.DAL.IGetAll`1.GetAll(System.Func{System.Linq.IQueryable{`0},System.Collections.Generic.IEnumerable{`0}})">
+            <summary>
+            A method to retrieve all objects from the persistence layer, subject to filtering via the filter function.
+            </summary>
+            <remarks>
+            The filter function changes the return type from IQueryable to IEnumerable so that it can perofmr filtering on the server.
+            </remarks>
+            <param name="filter">A function which can perform filtering.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
