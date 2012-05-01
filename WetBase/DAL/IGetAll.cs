@@ -38,7 +38,7 @@ namespace Wet.Dal
         /// The filter function changes the return type from IQueryable to IEnumerable so that it can perofmr filtering on the server.
         /// </remarks>
         /// <param name="filter">A function which can perform filtering.</param>
-        /// <returns></returns>
+        /// <returns>An enumerable object around the data objects from the persistence layer which passed through the filter.</returns>
         public IEnumerable<T> GetAll(Func<IQueryable<T>, IEnumerable<T>> filter)
         {
             Contract.Requires(filter != null);

@@ -25,12 +25,12 @@ namespace Wet.Dal
         {
             Contract.Requires(entity != null);
             Contract.Ensures(Contract.Result<IAdd<T>>() == this);
-            throw new NotImplementedException();
+            throw new NotImplementedException("Contract class, not implementing");
         }
 
         public void Save()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException("Contract class, not implementing");
         }
     }
 }
